@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+  <link rel="stylesheet" href="styles/bootstrap-material-design.min.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <title>Pi</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-dark fixed-top">
+    <a class="navbar-brand" href="/algorithm.html">Chudnovsky</a>
+  </nav>
+  <div id="ChudnovskyPage" class="container page-container">
+    <h1>Chudnovsky algorithm</h1>
+    <button type="button" class="btn btn-outline-secondary" id="step">step</button>
+    <div id="q">q=0</div>
+    <div>c=426880&#8730;10005</div>
+    <div id="valueContainer">
+      <div class="row justify-content-center">
+        <div class="col">initial value</div>
+        <div class="col">l&#8320;=13591409</div>
+        <div class="col">x&#8320;=1</div>
+        <div class="col">m&#8320;=1</div>
+        <div class="col">&pi;</div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col">value for q+1</div>
+        <div class="col">l<sub>q+1</sub>=l<sub>q</sub>+545140134</div>
+        <div class="col">x<sub>q+1</sub>=x<sub>q</sub>*(-262537412640768000)</div>
+        <div class="col">m<sub>q+1</sub>=((12q-2)(12q-6)(12q-10)/q&sup3;)</div>
+        <div class="col">&pi;=c/(&Sigma;(m<sub>q</sub>*l<sub>q</sub>/x<sub>q</sub>))</div>
+      </div>
+      <p></p>
+    </div>
+  </div>
+  <script src="scripts/jquery.min.js"></script>
+  <script src="scripts/popper.js"></script>
+  <script src="scripts/bootstrap-material-design.js"></script>
+  <script>$("body").bootstrapMaterialDesign();</script>
+  <script src="/__/firebase/7.18.0/firebase-app.js"></script>
+  <script src="/__/firebase/7.18.0/firebase-analytics.js"></script>
+  <script src="/__/firebase/7.18.0/firebase-auth.js"></script>
+  <script src="/__/firebase/7.18.0/firebase-firestore.js"></script>
+  <script src="/__/firebase/init.js"></script>
+  <script src="scripts/main.js"></script>
+</body>
+
+</html>

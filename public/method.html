@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+  <link rel="stylesheet" href="styles/bootstrap-material-design.min.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <title>Pi</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-dark fixed-top">
+    <a class="navbar-brand" href="/menu.html">method</a>
+  </nav>
+  <div id="methodPage" class="container page-container">
+    
+    <button id="addMethod" type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#addMethodDialog">add method</button>
+    <div id="methodContainer">
+
+      <!-- <div class="mb-2 card">
+        <div class="card-body">
+          <div id="range">from...to...</div>
+          <h5 class="card-title"><span>${numbers}</span>
+            <button id="delete" type="button" class="float-right btn deleteButton">
+              <i class="material-icons">delete</i>
+            </button>
+          </h5>
+          <div>method used:</div>
+          <div id="methodUsedContainer"></div>
+          <div>comment:</div>
+          <textarea id="comment"></textarea>
+        </div>
+      </div> -->
+
+    </div>
+    <div class="modal fade" id="addMethodDialog" tabindex="-1" aria-labelledby="add method" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Add method</h5>
+          </div>
+          <div class="modal-body">
+  
+            <div class="form-group bmd-form-group">
+              <label for="digit from">digit from</label>
+              <input type="text" id="from">
+            </div>
+            <div class="form-group bmd-form-group">
+              <label for="to">to</label>
+              <input type="text" id="to">
+            </div>
+            <button type="button" class="btn btn-secondary" id="digitButton">show</button>
+            <div>corresponding numbers</div>
+            <div id="tempDigitText" style="word-break:break-all">this line will be the digit text</div>
+            <div>select method</div>
+            <div id="methodType"></div>
+            <div class="form-group">
+              <label for="comment" class="bmd-label-floating">comment</label>
+              <textarea id="initialComment" type="text" cols="50" rows="5"></textarea>
+            </div>
+  
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">CANCEL</button>
+            <button type="button" id="submitAddMethod" class="btn btn-primary" data-dismiss="modal">CREATE</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- <div class="modal fade" id="methodTypeDialog" tabindex="-1" aria-labelledby="method type" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="methodTypeName"></h5>
+          </div>
+          <div class="modal-body">
+  
+            <div class="form-group bmd-form-group">
+              <div>description:</div>
+              <div id="methodTypeDescriptionText"></div>
+            </div>
+            <div class="form-group bmd-form-group">
+              <div>comment:</div>
+              <div id="methodTypeCommentText"></div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">CANCEL</button>
+            <button type="button" id="submitAddMethod" class="btn btn-primary" data-dismiss="modal">CREATE</button>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+
+  </div>
+  <script src="scripts/jquery.min.js"></script>
+  <script src="scripts/popper.js"></script>
+  <script src="scripts/bootstrap-material-design.js"></script>
+  <script>$("body").bootstrapMaterialDesign();</script>
+  <script src="/__/firebase/7.18.0/firebase-app.js"></script>
+  <script src="/__/firebase/7.18.0/firebase-analytics.js"></script>
+  <script src="/__/firebase/7.18.0/firebase-auth.js"></script>
+  <script src="/__/firebase/7.18.0/firebase-firestore.js"></script>
+  <script src="/__/firebase/init.js"></script>
+  <script src="scripts/main.js"></script>
+</body>
+
+</html>

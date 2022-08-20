@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+  <link rel="stylesheet" href="styles/bootstrap-material-design.min.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <title>Pi</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-dark fixed-top">
+    <a class="navbar-brand" href="/algorithm.html">Gauss-Legendre</a>
+  </nav>
+  <div id="Gauss-LegendrePage" class="container page-container">
+    <h1>Gauss-Legendre algorithm</h1>
+    <button type="button" class="btn btn-outline-secondary" id="step">step</button>
+    <div id="n">n=0</div>
+    <div id="valueContainer">
+      <div class="row justify-content-center">
+        <div class="col">initial value</div>
+        <div class="col">a&#8320;=1</div>
+        <div class="col">b&#8320;=1/&#8730;2</div>
+        <div class="col">t&#8320;=1/4</div>
+        <div class="col">p&#8320;=1</div>
+        <div class="col">&pi;</div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col">value for n+1</div>
+        <div class="col">a<sub>n+1</sub>=(a<sub>n</sub>+b<sub>n</sub>)/2</div>
+        <div class="col">b<sub>n+1</sub>=&#8730;(a<sub>n</sub>b<sub>n</sub>)</div>
+        <div class="col">t<sub>n+1</sub>=t<sub>n</sub>-p<sub>n</sub>(a<sub>n+1</sub>-a<sub>n</sub>)&sup2;</div>
+        <div class="col">p<sub>n+1</sub>=2p<sub>n</sub></div>
+        <div class="col">&pi;<sub>n+1</sub>=(a<sub>n</sub>+b<sub>n</sub>)&sup2;/4t<sub>n</sub></div>
+      </div>
+      <p></p>
+    </div>
+  </div>
+  <script src="scripts/jquery.min.js"></script>
+  <script src="scripts/popper.js"></script>
+  <script src="scripts/bootstrap-material-design.js"></script>
+  <script>$("body").bootstrapMaterialDesign();</script>
+  <script src="/__/firebase/7.18.0/firebase-app.js"></script>
+  <script src="/__/firebase/7.18.0/firebase-analytics.js"></script>
+  <script src="/__/firebase/7.18.0/firebase-auth.js"></script>
+  <script src="/__/firebase/7.18.0/firebase-firestore.js"></script>
+  <script src="/__/firebase/init.js"></script>
+  <script src="scripts/main.js"></script>
+</body>
+
+</html>

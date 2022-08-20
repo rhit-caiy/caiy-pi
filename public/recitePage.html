@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+  <link rel="stylesheet" href="styles/bootstrap-material-design.min.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <title>Pi input</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-dark fixed-top">
+    <a class="navbar-brand" data-toggle="modal" data-target="#exitDialog">Pi input</a>
+  </nav>
+  <div id="recitePage" class="container page-container">
+    <div class="input-group">
+      <textarea class="form-control" aria-label="With textarea" id="input" placeholder="input digits here" cols="80" rows="5" class="ipt-txt"></textarea>
+    </div>
+    <div id="digitText"></div>
+    <hr>
+    <div id="wrongText"></div>
+    <hr>
+    <button type="button" class="btn btn-primary btn-lg" id="check">check</button>
+    <button type="button" class="btn btn-primary btn-lg" id="save">save</button>
+    <button type="button" class="btn btn-primary btn-lg" id="hint">hint</button>
+    <button type="button" class="btn btn-primary btn-lg" id="exit" data-toggle="modal" data-target="#exitDialog">exit</button>
+    <hr>
+    <div id="hintText"></div>
+    <input type="checkbox" id="autocheck"> check automatically
+  </div>
+
+  <div class="modal" tabindex="-1" role="dialog" id="exitDialog">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Exit</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Sure to exit?</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" id="confirmExit" class="btn btn-primary" data-dismiss="modal">exit</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">cancel</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="scripts/jquery.min.js"></script>
+  <script src="scripts/popper.js"></script>
+  <script src="scripts/bootstrap-material-design.js"></script>
+  <script>$("body").bootstrapMaterialDesign();</script>
+  <script src="/__/firebase/7.18.0/firebase-app.js"></script>
+  <script src="/__/firebase/7.18.0/firebase-analytics.js"></script>
+  <script src="/__/firebase/7.18.0/firebase-auth.js"></script>
+  <script src="/__/firebase/7.18.0/firebase-firestore.js"></script>
+  <script src="/__/firebase/init.js"></script>
+  <script src="scripts/main.js"></script>
+</body>
+
+</html>
