@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
   <link rel="stylesheet" href="styles/bootstrap-material-design.min.css">
   <link rel="stylesheet" href="styles/main.css">
-  <title>Pi</title>
+  <title>&pi;</title>
 </head>
 
 <body>
@@ -15,7 +15,7 @@
     <a class="navbar-brand" href="/menu.html">search</a>
   </nav>
   <div id="searchPage" class="container page-container">
-    <div id="max"></div>
+    <div>search index by digit</div>
     <div class="input-group mb-3">
       <input id="numberPattern" type="text" class="form-control" placeholder="number pattern looking for" aria-label="number pattern looking for" aria-describedby="basic-addon2">
       <div class="input-group-append">
@@ -24,13 +24,16 @@
     </div>
     <div id="indexText"></div>
     <hr>
+    <div>search digit by index</div>
     <div class="input-group mb-3">
-      <input id="digitIndex" type="text" class="form-control" placeholder="digit looking for" aria-label="digit looking for" aria-describedby="basic-addon2">
+      <input id="digitIndex" type="text" class="form-control" placeholder="digit looking for, example: 1, 1-10" aria-label="digit looking for" aria-describedby="basic-addon2">
       <div class="input-group-append">
         <button id="digitIndexButton" class="btn btn-outline-secondary" type="button">index</button>
       </div>
     </div>
     <div id="digitText"></div>
+    <hr>
+    <div id="max"></div>
   </div>
   <script src="scripts/jquery.min.js"></script>
   <script src="scripts/popper.js"></script>
